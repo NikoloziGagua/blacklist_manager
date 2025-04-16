@@ -72,11 +72,40 @@ Here’s how to get the app running on your machine:
      $database = 'blacklist_manager';
      ```
 
-4. **Set Up the Web Server**:
+ 4: **Web Server Setup**
+This step involves configuring your web server (Apache/Nginx) to serve the Blacklist Manager app.
 
-   - Move the `blacklist-manager` folder to your web server’s root (e.g., `/var/www/html/blacklist-manager` for Apache or `C:\xampp\htdocs\blacklist-manager` for XAMPP).
-   - Ensure the `style/` folder is readable by the server.
-   - Point your server to the project directory (update Apache/Nginx config if needed).
+Option 1: Apache (XAMPP/WAMP/MAMP)
+Move the Project Folder:
+
+Copy the entire blacklist-manager folder to your web server's root directory:
+
+Windows (XAMPP/WAMP): C:\xampp\htdocs\blacklist-manager
+
+Linux/macOS (Apache): /var/www/html/blacklist-manager
+
+Set Permissions:
+Ensure the server can read files:
+
+      chmod -R 755 /var/www/html/blacklist-manager  # Linux/macOS
+(Not needed on Windows/XAMPP by default.)
+
+Verify style/ Folder:
+
+      Check that the style/ folder (containing CSS) is inside the project folder.
+
+Test access by visiting:
+      http://localhost/blacklist-manager/style/style.css
+(Should show the CSS file, not a 404 error.)
+
+--
+Apache Configuration (if needed):
+
+Usually, no config changes are required for XAMPP.
+
+If you get errors, ensure mod_rewrite is enabled in httpd.conf:
+
+      LoadModule rewrite_module modules/mod_rewrite.so
 
 5. **Access the App**:
 
