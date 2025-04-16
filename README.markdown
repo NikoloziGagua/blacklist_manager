@@ -32,7 +32,7 @@ Here’s how to get the app running on your machine:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/Nikolozi_gagua/blacklist_manager.git
+   git clone https://github.com/NikoloziGagua/blacklist_manager.git
    cd blacklist_manager
    ```
 
