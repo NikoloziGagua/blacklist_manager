@@ -1,6 +1,6 @@
 # Blacklist Manager
 
-Hey there! This is my PHP-based web app for managing a company blacklist, built as a student project. It lets managers log in securely, add or remove companies from a blacklist, view or edit blacklist details, and generate reports. I’ve packed it with features like secure password hashing, CSRF protection, audit logging, and a beefed-up sample dataset to show it off.
+This is my PHP-based web app for managing a company blacklist, this was part of a student group projext. It lets managers log in securely, add or remove companies from a blacklist, view or edit blacklist details, and generate reports. I’ve packed it with features like secure password hashing, CSRF protection, audit logging, and a sample dataset to show it off.
 
 ## Features
 
@@ -32,11 +32,10 @@ Here’s how to get the app running on your machine:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/blacklist-manager.git
-   cd blacklist-manager
+   git clone https://github.com/Nikolozi_gagua/blacklist_manager.git
+   cd blacklist_manager
    ```
 
-   *Replace* `your-username` *with your actual GitHub username.*
 
 2. **Set Up the Database**:
 
@@ -99,7 +98,7 @@ The app uses a MySQL database with four tables:
 The `schema.sql` file includes:
 
 - 1 sample user (`test_manager`).
-- 5 sample companies (e.g., TechTrend Innovations, Global Imports Ltd), with 2 blacklisted and 3 not.
+- 5 sample companies  with 2 blacklisted and 3 not.
 - Blacklist records for the blacklisted companies, including multiple entries for one to show history.
 
 Check `schema.sql` for the full setup and sample data.
@@ -124,33 +123,9 @@ I’ve put a lot of effort into making this secure:
 5. **View Reports**: Hit “Blacklist Report” to see all blacklisted companies, sort by date/name/amount, and browse pages.
 6. **Log Out**: Click “Logout” to end your session safely.
 
-## Future Improvements
-
-I’ve got some ideas to level this up:
-
-- **Password Reset**: Add a secure way for managers to reset passwords.
-- **Search Filter**: Let users search companies in dropdowns or reports.
-- **Email Alerts**: Notify managers when blacklist changes happen.
-- **Fancier UI**: Maybe use Bootstrap for a modern look.
-- **APIs**: Add REST endpoints for other apps to interact with the blacklist.
-
-## Contributing
-
-Love to hear your thoughts! To contribute:
-
-- Open an issue for bugs or feature ideas.
-- Submit a pull request with tested changes.
-
-## License
-
-Licensed under the MIT License. Use, modify, or share it freely, just keep the copyright notice.
-
 ## Author
 
-**Nikolozi Gagua** (Student ID: C00303433)
-
-This project was a blast to build! I learned heaps about PHP, MySQL, and web security. Hope you enjoy checking it out!
+From this project i learned heaps about PHP, MySQL, and web security. Hope you enjoy checking it out!
 
 ---
 
-*Note*: The sample password hash in `schema.sql` is a placeholder. Generate your own with `password_hash()` for real users. Stay secure!
